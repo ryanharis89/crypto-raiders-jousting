@@ -1,2 +1,2 @@
 # unity-test-repo
-This is the a test unity project repo
+This is a test unity project repo
