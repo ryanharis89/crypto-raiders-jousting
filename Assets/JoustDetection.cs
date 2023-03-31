@@ -6,6 +6,11 @@ public class JoustDetection : MonoBehaviour
 {
     public RoundHandler roundHandler;
 
+    private void Awake()
+    {
+        roundHandler = GameObject.Find("GameManager").GetComponent<RoundHandler>();
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Collision detected");
