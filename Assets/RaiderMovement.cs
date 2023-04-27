@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
 public class RaiderMovement : MonoBehaviour
@@ -12,7 +13,6 @@ public class RaiderMovement : MonoBehaviour
     public float positionThreshold = 0.1f;
     public float rotationThreshold = 1.0f;
     public GameObject hitAnimation;
-    public AudioClip hitSound;
     private Vector3 targetPosition;
     private Quaternion targetRotation;
     private bool flip = false;
@@ -60,7 +60,8 @@ public class RaiderMovement : MonoBehaviour
         Vector3 hitPosition = transform.position - new Vector3(0, -0.7f, 0.11f);
         GameObject hit = Instantiate(hitAnimation, hitPosition, Quaternion.identity);
         hit.transform.parent = transform;
-        AudioSource.PlayClipAtPoint(hitSound, hitPosition);
+        hit.GetComponent<NetworkObject>().Spawn(true);
+        
     }
 
 

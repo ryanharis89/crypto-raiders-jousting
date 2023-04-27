@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
-public class JoustDetection : MonoBehaviour
+public class JoustDetection : NetworkBehaviour
 {
     public RoundHandler roundHandler;
 
@@ -14,7 +15,7 @@ public class JoustDetection : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Collision detected");
-        if (other.gameObject.GetComponent<BoxCollider2D>() != null)
+        if (other.gameObject.GetComponent<BoxCollider2D>() != null && IsServer)
         {
             roundHandler.CalculateJousteResult();
         }
