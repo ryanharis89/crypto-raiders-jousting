@@ -238,8 +238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96288ba0dbc3ed6449b5262c5bde1844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raiderOneGo: {fileID: 0}
-  raiderTwoGo: {fileID: 0}
+  raiderOneGo: {fileID: 5840065205546756230, guid: df27bc7df7091d54e90728af0d6d1068, type: 3}
+  raiderTwoGo: {fileID: 7875491015994218558, guid: 2f7c66314d5fcb44e9d0c35077fbb703, type: 3}
   movementSpeed: 5
   rotationSpeed: 6
   leftPosition: {x: -10, y: -1.1, z: -3}
@@ -290,8 +290,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roundHandler: {fileID: 155265935}
-  playerPrefabA: {fileID: 8930291777499299161, guid: df27bc7df7091d54e90728af0d6d1068, type: 3}
-  playerPrefabB: {fileID: 8185232544757266543, guid: 2f7c66314d5fcb44e9d0c35077fbb703, type: 3}
+  playerPrefabA: {fileID: 5840065205546756230, guid: df27bc7df7091d54e90728af0d6d1068, type: 3}
+  playerPrefabB: {fileID: 7875491015994218558, guid: 2f7c66314d5fcb44e9d0c35077fbb703, type: 3}
 --- !u!1 &475571828
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,7 +329,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 291.2, y: 174.3}
+  m_AnchoredPosition: {x: 51.200012, y: 103.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &475571830
@@ -1299,7 +1299,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 291, y: 241}
+  m_AnchoredPosition: {x: 51, y: 170}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &851937563
@@ -1556,7 +1556,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 291.1, y: 208.7}
+  m_AnchoredPosition: {x: 51.100006, y: 137.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1564997755
@@ -1758,15 +1758,20 @@ MonoBehaviour:
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 1579488988}
-    PlayerPrefab: {fileID: 0}
+    PlayerPrefab: {fileID: 5840065205546756230, guid: df27bc7df7091d54e90728af0d6d1068, type: 3}
     NetworkPrefabs:
     - Override: 0
-      Prefab: {fileID: 8930291777499299161, guid: df27bc7df7091d54e90728af0d6d1068, type: 3}
+      Prefab: {fileID: 5840065205546756230, guid: df27bc7df7091d54e90728af0d6d1068, type: 3}
       SourcePrefabToOverride: {fileID: 0}
       SourceHashToOverride: 0
       OverridingTargetPrefab: {fileID: 0}
     - Override: 0
-      Prefab: {fileID: 8185232544757266543, guid: 2f7c66314d5fcb44e9d0c35077fbb703, type: 3}
+      Prefab: {fileID: 7875491015994218558, guid: 2f7c66314d5fcb44e9d0c35077fbb703, type: 3}
+      SourcePrefabToOverride: {fileID: 0}
+      SourceHashToOverride: 0
+      OverridingTargetPrefab: {fileID: 0}
+    - Override: 0
+      Prefab: {fileID: 7708356555883771863, guid: fe0e399630cd0cf46aee195bed7a4261, type: 3}
       SourcePrefabToOverride: {fileID: 0}
       SourceHashToOverride: 0
       OverridingTargetPrefab: {fileID: 0}
